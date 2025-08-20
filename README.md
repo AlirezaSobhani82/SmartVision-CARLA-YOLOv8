@@ -33,18 +33,29 @@ SmartVision-CARLA-YOLOv8/ ├── data/
 # Install dependencies
 pip install -r requirements.txt
 
+# Run the Streamlit app
+streamlit run app/streamlit_demo.py
+
 # Convert annotations
 python scripts/convert_annotations.py --input data/carla --output data/yolo
 
 # Train YOLOv8 model
 python scripts/train.py --config models/yolov8_config.yaml
 
+🧠 Features of the App
+- Upload custom driving images for detection
+- View bounding boxes and class predictions in real-time
+- Toggle model confidence thresholds
+- Lightweight and fast — ideal for showcasing in interviews or portfolios
+
 📸 Sample Results
 Include a few sample detection images or metrics here if available.
+
 🌍 Author
-Alireza
+Alireza Sobhani
 Machine Learning & Computer Vision Developer
 Focused on international portfolio building and migration-ready projects.
+
 📫 Contact
 Feel free to reach out via LinkedIn or GitHub for collaboration or freelance opportunities.
 
